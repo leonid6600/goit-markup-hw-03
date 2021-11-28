@@ -1,0 +1,236 @@
+:root {
+    --brand-color: #2196F3;
+    --text: #757575;
+    --title: #212121;
+    --bg-color: #ffffff;
+    --secondary-bg-color:#F5F4FA;
+    --third-bg-color: #2F303A;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /* Основной цвет текста */
+    color:var(--text);
+    font-size: 14px;
+    line-height: 24px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    /* Основной цвет фона #ffffff */
+    background-color:var(--bg-color);
+}
+
+
+
+/* Отмена стилей по умолчанию */
+a {text-decoration:none;}
+ul {list-style:none;}
+
+.blue {color:var(--brand-color);}
+
+/* Вторичный цвет фона #2F303A */
+.black-background {background-color:var(--third-bg-color);}
+
+/* Для ровности цифр в строке */
+*{font-variant-numeric:lining-nums;}
+
+/* Придание выделению определенного цвета */
+*::selection {
+color: #ffffff;
+background-color:var(--brand-color);
+}
+
+
+/* Стили для навигации */
+.header-nav a{
+    font-weight: 500;
+    font-size: 14px;
+    color:var(--title);
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+.header-nav a:hover,
+.header-nav a:focus{
+    color:var(--brand-color);
+}
+
+/* Текущая (а потому активная) ссылка в навигации */
+.header-nav .link-current {
+    color:var(--brand-color);
+}
+
+/* стили для связи в хедере */
+.header-connection a{
+    font-weight: 500;
+    font-size: 14px;
+    color:var(--text);
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+    
+.header-connection a:hover,
+.header-connection a:focus
+    {color:var(--brand-color);
+}
+
+/* стиль для адреса */
+.address {
+    color:var(--bg-color);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+
+/* стили для связи в футоре */
+.footer-connection a{    
+    color:rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+
+.footer-connection a:hover,
+.footer-connection a:focus { 
+    color:var(--brand-color);
+}
+
+/* Цвета части лого в футере */
+.white-color {color:var(--bg-color);}
+
+
+/* Цвет части логотипа */
+.black-color {color:#000000;}
+
+/* Вторичный цвет фона #2F303A */
+.black-background {background-color:#2F303A;}
+
+/* Кнопка на главной стр */
+.button {
+    color: var(--bg-color);
+    background-color: var(--brand-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background-color:#188CE8;
+}
+
+/* Фильтр тегов в портфолио */
+
+.button-nav button{
+    color:var(--title);
+    background-color:var(--bg-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+}
+
+.button-nav .primary {
+    color: var(--title);
+    background-color:var(--secondary-bg-color);
+}
+
+.button-nav .primary:hover,
+.button-nav .primary:focus {
+    color: var(--bg-color);
+    background-color:var(--brand-color);
+}
+
+.button-nav .secondary {
+    color: var(--bg-color);
+    background-color:var(--brand-color);
+}
+
+.button-nav .secondary:hover,
+.button-nav .secondary:focus {
+    background-color:#188CE8;
+}
+
+
+/* основной цвет заголовков */
+.title {color:var(--title);}
+
+.text-hero{
+    color:#ffffff;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.logo{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.advantage h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1.1;
+    text-transform: uppercase;
+}
+
+.team {
+    background-color: var(--secondary-bg-color);
+}
+
+.advantage h2, 
+.team h2,
+.services h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.team h3 {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.team p{
+    font-size: 16px;
+    text-align: center;
+    color: var(--text);
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.portfolio-card h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+}
+
+.portfolio-card p{
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+
+
