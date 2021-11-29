@@ -13,18 +13,26 @@ body {
     /* Основной цвет текста */
     color:var(--text);
     font-size: 14px;
-    line-height: 24px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     /* Основной цвет фона #ffffff */
     background-color:var(--bg-color);
+    margin: 0;
 }
 
 
 
 /* Отмена стилей по умолчанию */
-a {text-decoration:none;}
-ul {list-style:none;}
+a {
+    text-decoration:none;
+}
+
+ul {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
 
 .blue {color:var(--brand-color);}
 
@@ -40,8 +48,86 @@ color: #ffffff;
 background-color:var(--brand-color);
 }
 
+/* Глобальное придание всем елемента типа рассчета блочных элементов border-box 
+Правильно делать именно так!!!!!!!!!!! */
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing:inherit;
+}
+/* ___________________________________ */
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto; 
+    outline: 1px dashed #f44336;
+}
+
+.header{
+    padding: 0;
+    margin: 0;  
+}
+
+.hero{
+    background-color: var(--third-bg-color);
+    }
+
+.main-message{
+    margin: 0 auto;  
+    text-align: center;
+    padding: 200px 0;    
+    }
+
+.advantage{
+    padding: 0;
+    margin: 0;
+}
+
+
+.services{
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+.team{
+    padding: 0;
+    margin: 0;
+}
+
+.footer{
+    background-color: var(--third-bg-color);
+    padding: 0;
+    margin: 0;
+}
+
+.button-nav{
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio{
+    padding: 0;
+    margin: 0; 
+}
+
+
+
 
 /* Стили для навигации */
+
+
 .header-nav a{
     font-weight: 500;
     font-size: 14px;
@@ -107,8 +193,10 @@ background-color:var(--brand-color);
 /* Вторичный цвет фона #2F303A */
 .black-background {background-color:#2F303A;}
 
-/* Кнопка на главной стр */
+
+/* Кнопки сайта */
 .button {
+    display: inline-block;
     color: var(--bg-color);
     background-color: var(--brand-color);
     font-family: inherit;
@@ -117,6 +205,10 @@ background-color:var(--brand-color);
     line-height: 1.9;
     letter-spacing: 0.06em;
     cursor: pointer;
+    border-radius: 4px;
+    border: 0;
+    text-align: center;
+    border: 1px solid transparent;
 }
 
 .button:hover,
@@ -124,19 +216,20 @@ background-color:var(--brand-color);
     background-color:#188CE8;
 }
 
-/* Фильтр тегов в портфолио */
+/* Кнопка на главной стр */
+.main-message .button{
+    padding: 10px 32px;
+    }
 
-.button-nav button{
+/* Кнопки на стр портфолио */
+.button-nav .button{
     color:var(--title);
     background-color:var(--bg-color);
-    cursor: pointer;
-    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-    text-align: center;
-
+    padding: 6px 22px;
 }
 
 .button-nav .primary {
@@ -172,6 +265,7 @@ background-color:var(--brand-color);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .logo{
@@ -230,6 +324,7 @@ background-color:var(--brand-color);
     font-size: 16px;
     line-height: 1.9;
 }
+
 
 
 

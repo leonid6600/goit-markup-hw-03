@@ -6,41 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>goit-markup-hw-02</title>
 
-  <link rel="stylesheet" href="./css/modern-normalize.css">
-  <link rel="stylesheet" href="./css/styless.css">
-
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="./css/styless.css">
 
 </head>
 
 
 <body>
  <!-- Шапка -->
- <header>
-  <nav>
-    <a href="./index.html" class="black-color logo"><span class="blue">Web</span>Studio</a>
-    <ul class="header-nav">
-      <li><a href="./index.html" class="link-current">Студия</a></li>
-      <li><a href="./portfolio.html">Портфолио</a></li>
-      <li><a href="/">Контакты</a></li>
+ <header class="header">
+   <div class="container">
+    <nav>
+      <a href="./index.html" class="black-color logo"><span class="blue">Web</span>Studio</a>
+      <ul class="header-nav">
+        <li><a href="./index.html" class="link-current">Студия</a></li>
+        <li><a href="./portfolio.html">Портфолио</a></li>
+        <li><a href="/">Контакты</a></li>
+      </ul>
+    </nav>
+    <ul class="header-connection">
+      <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
-  </nav>
-   <ul class="header-connection">
-    <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-  </ul>
+  </div>
 </header>
-
 
   <main>
     <!-- Герой -->
-      <section class="black-background">
-        <h1 class="text-hero">Эффективные решения<br>для вашего бизнеса</h1>
-        <button type="button" class="button"> Заказать услугу</button>       
+      <section class="hero">
+        <div class="container main-message">
+          <h1 class="text-hero">Эффективные решения<br>для вашего бизнеса</h1>
+          <button type="button" class="button">Заказать услугу</button>
+        </div>      
       </section>
 
     <!-- Преимущества -->
     <section class="advantage">
+      <div class="container">
       <h2 hidden class="title">Преимущества</h2>
       <ul>
         <li>
@@ -68,63 +72,69 @@
           </div>
         </li>
       </ul>
+    </div>
     </section>
     <!-- Услуги -->
     <section class="services">
+      <div class="container">
       <h2 class="title">Чем мы занимаемся</h2>
       <ul>
         <li><a href="/" aria-label="web site link"><img src="images/album/tablet-01.jpg" width="370" alt="Планшет и клавиатура"></a></li>
         <li><a href="/" aria-label="annexes link"><img src="images/album/laptop-01.jpg" width="370" alt="Ноутбук и телефон"></a></li>
         <li><a href="/" aria-label="design link"><img src="images/album/tablet-02.jpg" width="370" alt="Графисеский планшет и стилус"></a></li>
       </ul>
+      </div>
     </section>
     <!-- Команда -->
     <section class="team">
-      <h2 class="title">Наша команда</h2>
-      <ul>
-        <li>
-          <a href="">
-            <div>
-              <img width="270" src="images/team/produkt.jpg" alt="мужчина в очках">
-              <h3 class="title">Игорь Демьяненко</h3>
-              <p>Product Designer</p>
-            </div>
-         </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <img width="270" src="images/team/frontend.jpg" alt="Девушка в очках">
-              <h3 class="title">Ольга Репина</h3>
-              <p>Frontend Developer</p>
-            </div>
+      <div class="container">
+        <h2 class="title">Наша команда</h2>
+        <ul>
+          <li>
+            <a href="">
+              <div>
+                <img width="270" src="images/team/produkt.jpg" alt="мужчина в очках">
+                <h3 class="title">Игорь Демьяненко</h3>
+                <p>Product Designer</p>
+              </div>
           </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <img width="270" src="images/team/marceting.jpg" alt="Улыбающийся парень">
-              <h3 class="title">Николай Тарасов</h3>
-              <p>Marketing</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <img width="270" src="images/team/designer.jpg" alt="Мужчина в очках с ухмылкой">
-              <h3 class="title">Михаил Ермаков</h3>
-              <p>UI Designer</p>
-            </div>
-          </a>
-        </li>
-      </ul>
+          </li>
+          <li>
+            <a href="">
+              <div>
+                <img width="270" src="images/team/frontend.jpg" alt="Девушка в очках">
+                <h3 class="title">Ольга Репина</h3>
+                <p>Frontend Developer</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div>
+                <img width="270" src="images/team/marceting.jpg" alt="Улыбающийся парень">
+                <h3 class="title">Николай Тарасов</h3>
+                <p>Marketing</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div>
+                <img width="270" src="images/team/designer.jpg" alt="Мужчина в очках с ухмылкой">
+                <h3 class="title">Михаил Ермаков</h3>
+                <p>UI Designer</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
     </main>
 
 
 <!-- Подвал -->
-<footer class="black-background">
+<footer class="footer">
+  <div class="container">
   <a href="./index.html" class="white-color logo"><span class="blue">Web</span>Studio</a>
   <address>
     <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
@@ -133,6 +143,7 @@
           <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
   </address>
+  </div>
 </footer>
   
 </body>
