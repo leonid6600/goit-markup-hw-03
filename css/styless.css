@@ -74,9 +74,26 @@ p {
     outline: 1px dashed #f44336;
 }
 
+
 .header{
-    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 25px;
     margin: 0;  
+}
+
+.header-logo-nav {
+    display: flex;
+}
+
+.header-nav{
+    display: flex;
+}
+
+.header-connection{
+    display: flex;
 }
 
 .hero{
@@ -89,38 +106,77 @@ p {
     padding: 200px 0;    
     }
 
-.advantage{
-    padding: 0;
+
+.portfolio-page .container{
+    padding: 94px 0;
+}
+
+.advantage-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 94px 0; 
     margin: 0;
 }
 
 
-.services{
-    padding: 0;
+.container .services{
+    padding: 0 0 94px;
+}
+
+.services-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 0;
     line-height: 0;
 }
 
 .team{
-    padding: 0;
-    margin: 0;
+    background-color: var(--secondary-bg-color);
 }
 
-.footer{
-    background-color: var(--third-bg-color);
-    padding: 0;
-    margin: 0;
+.team .container{
+    padding: 94px 0;
 }
+
+
+.team-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .button-nav{
     padding: 0;
     margin: 0;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.portfolio{
-    padding: 0;
-    margin: 0; 
+.portfolio-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
 }
+
+.portfolio-card{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+.footer{
+    background-color: var(--third-bg-color);
+}
+
+.footer .container{
+    padding: 60px 0;
+}
+
 
 
 
@@ -272,6 +328,8 @@ p {
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
 .advantage h3 {
@@ -282,18 +340,17 @@ p {
     text-transform: uppercase;
 }
 
-.team {
-    background-color: var(--secondary-bg-color);
-}
 
 .advantage h2, 
 .team h2,
-.services h2 {
+.services h2,
+.portfolio-page h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .team h3 {
@@ -312,7 +369,7 @@ p {
     letter-spacing: 0.03em;
 }
 
-.portfolio-card h2{
+.portfolio-card h3{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -323,6 +380,7 @@ p {
 .portfolio-card p{
     font-size: 16px;
     line-height: 1.9;
+    color:var(--text);
 }
 
 
